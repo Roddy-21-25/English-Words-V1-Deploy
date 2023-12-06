@@ -1,0 +1,6 @@
+.svg{
+    transition: 0.3s ease margin-right;
+}
+.navbar-link-enpoint:hover .svg{
+    margin-right: 20px;
+}

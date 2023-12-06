@@ -1,0 +1,9 @@
+.highlight {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 6px;
+}
