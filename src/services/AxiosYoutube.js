@@ -7,10 +7,10 @@ export const useYoutube = ({ wordSend }) => {
   const getVideos = async (wordToSend) => {
     try {
       if (wordToSend.trim() === "") return undefined;
-      
+
       const resp = await YourubeApi.get(
-        // `https://appdeinglesenglishwordssecond.bsite.net/api/Bv4?palabra_clave=${wordToSend}`
-        `http://englishwordsappweb.somee.com/api/Bv4?palabra_clave=${wordToSend}`
+        // Usa un protocolo relativo
+        `//englishwordsappweb.somee.com/api/Bv4?palabra_clave=${wordToSend}`
       );
       setVideos(resp);
     } catch (error) {
@@ -21,7 +21,7 @@ export const useYoutube = ({ wordSend }) => {
   useEffect(() => {
     setTimeout(() => {
       getVideos(wordSend);
-      console.log("Api de youtube Funcionando");
+      console.log("Api de YouTube Funcionando");
     }, 3000);
   }, [wordSend]);
 
