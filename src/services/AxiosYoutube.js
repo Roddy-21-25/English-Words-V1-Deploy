@@ -7,17 +7,11 @@ export const useYoutube = ({ wordSend }) => {
   const getVideos = async (wordToSend) => {
     try {
       if (wordToSend.trim() === "") return undefined;
-
-      // const resp = await YourubeApi.get(
-      //   `http://englishwordsappweb.somee.com/api/Bv4?palabra_clave=${wordToSend}`
-      // );
-
-      const baseUrl = "/api/youtube";
-
+      
       const resp = await YourubeApi.get(
-        `${baseUrl}?palabra_clave=${wordToSend}`
+        // `https://appdeinglesenglishwordssecond.bsite.net/api/Bv4?palabra_clave=${wordToSend}`
+        `http://englishwordsappweb.somee.com/api/Bv4?palabra_clave=${wordToSend}`
       );
-
       setVideos(resp);
     } catch (error) {
       console.error("Error fetching data:", error);

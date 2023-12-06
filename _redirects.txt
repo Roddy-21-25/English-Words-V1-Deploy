@@ -1,5 +1,0 @@
-# Para la API de traductor
-/api/translator/* http://englishwordsappweb.somee.com/api/Bv4Translator/:splat 200!
-
-# Para la API de YouTube
-/api/youtube/* http://englishwordsappweb.somee.com/api/Bv4/:splat 200!
