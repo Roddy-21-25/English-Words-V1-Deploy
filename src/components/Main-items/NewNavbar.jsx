@@ -6,6 +6,8 @@ import { RoutesList } from "../../data/RoutesList"
 import { useDispatch } from 'react-redux';
 import { changeView } from '../../redux/Sllices/ManageViewSlice';
 
+import assets from "../../assets";
+
 function NewNavbar() {
     const [isClick, setIsClick] = useState(false);
 
@@ -34,7 +36,7 @@ function NewNavbar() {
                             <div className="flex-shrink-0">
                                 <NavLink to='/'>
                                     <img className={`mx-auto`}
-                                        src="/src/assets/Logo.png" alt="Logo de la pagina" />
+                                        src={assets.logoNavbar} alt="Logo de la pagina" />
                                 </NavLink>
                             </div>
                         </div>

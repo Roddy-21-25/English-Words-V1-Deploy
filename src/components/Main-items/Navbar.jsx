@@ -5,6 +5,7 @@ import { RoutesList } from "../../data/RoutesList"
 import { useDispatch } from 'react-redux';
 import { changeView } from '../../redux/Sllices/ManageViewSlice';
 
+import assets from "../../assets";
 
 function Navbar() {
 
@@ -37,7 +38,7 @@ function Navbar() {
                         pt-1 flex sm:items-center sm:justify-evenly flex-col md:flex-row ${open ? 'top-20 opacity-100' : 'top-[-490px] md:opacity-100 opacity-0'}`}>
                         <div className="">
                             <NavLink to='/'>
-                                <img className={`mx-auto ${open ? 'mb-6 sm:mb-0 cursor-pointer' : ''}`} src="/src/assets/Logo.png" alt="Logo de la pagina" />
+                                <img className={`mx-auto ${open ? 'mb-6 sm:mb-0 cursor-pointer' : ''}`} src={assets.logoNavbar} alt="Logo de la pagina" />
                             </NavLink>
                         </div>
 

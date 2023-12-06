@@ -4,6 +4,8 @@ import { Link as ScrollLink } from 'react-scroll';
 import ButtonHeader from "./ButtonHeader";
 import SpanText from "./SpanText";
 
+import assets from "../../assets";
+
 function Header() {
     const navigate = useNavigate();
 
@@ -39,7 +41,7 @@ function Header() {
                         </div>
                     </div>
                     <div className="sm:col-span-2 grid justify-items-center">
-                        <img src="./src/assets/header-assets/header-img.png" className="header-img" alt="imagen del header" />
+                        <img src={assets.homeImg} className="header-img" alt="imagen del header" />
                     </div>
                 </div>
             </div>

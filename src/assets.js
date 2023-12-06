@@ -25,6 +25,12 @@ import imgHeaderHome from "/src/assets/appSection-assets/header-app.png";
 //? LaadingComponente
 import imgLoading from "/src/assets/loading-assets/loading.png";
 
+//? Navbar
+import logoNavbar from "/src/assets/Logo.png";
+
+//? Header Home Img
+import homeImg from "/src/assets/header-assets/header-img.png";
+
 const assets = {
   error404,
   englishWordAbout,
@@ -39,6 +45,8 @@ const assets = {
   gifBeforeView,
   imgHeaderHome,
   imgLoading,
+  logoNavbar,
+  homeImg,
 };
 
 export default assets;
