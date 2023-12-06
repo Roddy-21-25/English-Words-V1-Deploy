@@ -1,4 +1,4 @@
-import{a as o,j as e}from"./index-35de3ae6.js";const d=[{title:"“English Word”",content:`
+import{a as o,j as e}from"./index-471a2e5b.js";const d=[{title:"“English Word”",content:`
         ”English Words” is the Top English Learning Web App about words on English, based on the idea of knowing the principal concepts of a word for to get better on Vocabulary, Pronunciation and Listening, also, the central purpose of “English Words” is to solve the next problem:
         
 
