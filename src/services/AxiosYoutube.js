@@ -12,8 +12,10 @@ export const useYoutube = ({ wordSend }) => {
       //   `http://englishwordsappweb.somee.com/api/Bv4?palabra_clave=${wordToSend}`
       // );
 
+      const baseUrl = "/api/youtube";
+
       const resp = await YourubeApi.get(
-        `/api/youtube?palabra_clave=${wordToSend}`
+        `${baseUrl}?palabra_clave=${wordToSend}`
       );
 
       setVideos(resp);

@@ -11,8 +11,10 @@ export const useTranslator = ({ wordSend }) => {
       //   `http://englishwordsappweb.somee.com/api/Bv4Translator?text=${wordToSend}&src=${languaje}`
       // );
 
+      const baseUrl = "/api/translator";
+
       const resp = await TranslatorApi.get(
-        `/api/translator?text=${wordToSend}&src=${languaje}`
+        `${baseUrl}?text=${wordToSend}&src=${languaje}`
       );
 
       setText(resp);
