@@ -10,9 +10,11 @@ export const useTranslatorNavbar = ({ wordSend, languaje }) => {
       if (wordToSend.trim() === "") return undefined;
 
       const resp = await TranslatorApi.get(
-        `http://englishwordsappweb.somee.com/api/Bv4Translator?text=${wordToSend}&src=${languaje}`
+        //? Para Produccion
+        `https://appdeinglesenglishwordssecond.bsite.net/api/Bv4Translator?text=${wordToSend}&src=${languaje}`
+        // `http://englishwordsappweb.somee.com/api/Bv4Translator?text=${wordToSend}&src=${languaje}`
       );
-      
+
       setText(resp);
       return resp;
     } catch (error) {

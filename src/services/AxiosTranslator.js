@@ -4,11 +4,13 @@ import { TranslatorApi } from "./Axios";
 export const useTranslator = ({ wordSend }) => {
   const [text, setText] = useState("");
 
-  const getText = async (wordToSend, languaje="es") => {
+  const getText = async (wordToSend, languaje = "es") => {
     try {
       if (wordToSend.trim() === "") return undefined;
       const resp = await TranslatorApi.get(
-        `http://englishwordsappweb.somee.com/api/Bv4Translator?text=${wordToSend}&src=${languaje}`
+        //? Para Produccion
+        `https://appdeinglesenglishwordssecond.bsite.net/api/Bv4Translator?text=${wordToSend}&src=${languaje}`
+        // `http://englishwordsappweb.somee.com/api/Bv4Translator?text=${wordToSend}&src=${languaje}`
       );
       setText(resp);
     } catch (error) {
@@ -18,10 +20,10 @@ export const useTranslator = ({ wordSend }) => {
 
   useEffect(() => {
     getText(wordSend);
-    console.log("traductor funcionando")
+    console.log("traductor funcionando");
   }, [wordSend]);
 
   return {
-    text
+    text,
   };
 };
